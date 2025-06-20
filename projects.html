@@ -1,0 +1,132 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projects - Winston Tatwa</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Embedded CSS for this page only -->
+  <style>
+    .section-heading {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #003366;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .section-heading::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: #0077cc;
+      margin-top: 8px;
+      border-radius: 5px;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .project-card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+      color: #003366;
+    }
+
+    .project-card p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .project-card a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .project-card a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body style="background-color: #f4f9ff;">
+  <header class="header">
+    <div class="container">
+      <h1 class="site-title">Winston Tatwa</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="experience.html">Experience</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2 class="section-heading">Projects I've Built</h2>
+
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Minneswater App & Website</h3>
+        <p>
+          An internal Flutter application built for managing sales, inventory, meter readings,
+          and staff performance at <strong>Minneswater</strong>, a bottled water business.
+          I also designed and deployed the official website currently live at:
+        </p>
+        <a href="https://minneswater.co.ke" target="_blank">Visit minneswater.co.ke →</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Personal Finance Tracker</h3>
+        <p>
+          A mobile application developed in <strong>Android Studio</strong> to help users manage their finances on the go. 
+          Users can track daily expenses, set monthly budgets, and view spending summaries. The app uses local storage
+          and Material Design for an intuitive mobile experience.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>60-Second Shootout (Unity Game)</h3>
+        <p>
+          A fast-paced basketball prototype developed in Unity where players score as many baskets as possible
+          within 60 seconds. Featuring intuitive mouse drag controls and arcade-style gameplay.
+        </p>
+        <a href="https://play.unity.com/en/games/9faae913-b0b0-4abc-819d-dd062534c8ec/60-second-shootout" target="_blank">
+          Play 60-Second Shootout →
+        </a>
+      </div>
+
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>
+          The site you're browsing now — created from scratch using HTML5 and CSS3 to showcase my skills,
+          design sense, and understanding of web fundamentals, including responsive design and layout techniques.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Winston Tatwa. All rights reserved.</p>
+  </footer>
+</body>
+</html>

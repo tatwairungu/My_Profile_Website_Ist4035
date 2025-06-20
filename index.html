@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Winston Tatwa - Software Engineer</title>
+
+  <!--  External CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!--  Embedded CSS -->
+  <style>
+    .about-section {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 60px;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+    }
+
+    .about-section img {
+      width: 280px;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .section-heading {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #003366;
+      margin-bottom: 15px;
+      position: relative;
+    }
+
+    .section-heading::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: #0077cc;
+      margin-top: 5px;
+      border-radius: 5px;
+    }
+
+    blockquote {
+      background-color: #e6f2ff;
+      border-left: 5px solid #0077cc;
+      font-style: italic;
+      padding: 20px;
+      margin-bottom: 50px;
+      border-radius: 12px;
+    }
+
+    .skills-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .skill-card {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+      transition: transform 0.3s ease;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+</head>
+<body style="background-color: #f4f9ff;"> <!-- Inline CSS here -->
+
+  <header class="header">
+    <div class="container">
+      <h1 class="site-title">Winston Tatwa</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="experience.html">Experience</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- About Me -->
+    <section class="about-section">
+      <img src="images/IMG_3787.jpg" alt="Winston Tatwa">
+      <div>
+        <h2 class="section-heading">About Me</h2>
+        <p>
+          My name is Winston Tatwa Irungu, and I'm a passionate software engineer
+          who believes in building tech that changes lives. I specialize in developing
+          scalable web applications and intuitive user experiences. Whether it's
+          designing beautiful frontend interfaces or building resilient backend systems,
+          I enjoy turning complex problems into simple solutions.
+        </p>
+      </div>
+    </section>
+
+    <!-- Tech Philosophy -->
+    <h2 class="section-heading">Tech Philosophy</h2>
+    <blockquote>
+      "Technology is not just about code. It's about people. I build software that empowers users and simplifies tasks."
+    </blockquote>
+
+    <!-- Skills -->
+    <h2 class="section-heading">My Software Engineering Skills</h2>
+    <section class="skills-section">
+      <div class="skill-card">
+        <h3>Languages</h3>
+        <p>Python, JavaScript, Dart, Java, C++, C#</p>
+      </div>
+      <div class="skill-card">
+        <h3>Frameworks</h3>
+        <p>Flutter, React, Node.js, Unity Engine</p>
+      </div>
+      <div class="skill-card">
+        <h3>Tools & Platforms</h3>
+        <p>VS Code, Git, Firebase, Android Studio, REST APIs</p>
+      </div>
+      <div class="skill-card">
+        <h3>Other</h3>
+        <p>UI/UX Design, Agile Development, Firebase CLI</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Winston Tatwa. All rights reserved.</p>
+  </footer>
+</body>
+</html>
